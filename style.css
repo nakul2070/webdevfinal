@@ -1,0 +1,425 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Neue Haas Grotesk Text Pro";
+    box-sizing: border-box;
+}
+html,body{
+    width: 100%;
+    height:100%;
+}
+#main{
+    width: 100%;
+    height: 100vh;
+}
+#home{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+}
+#overlay{
+    position:absolute;
+    overflow: hidden;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+}
+#home img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#circle img{
+    transform: translate(-50%,-50%);
+    width: 100%;
+}
+#home #circle{
+    position: absolute;
+    height: 70vw;
+    width: 70vw;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 50%;
+}
+#circle img{
+    position: absolute;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    width: 100%;
+}
+#top{
+    position: absolute;
+    width:100%;
+    height:100%;
+
+}
+#top img{
+    transform: translate(-50%,-50%) rotate(-180deg);
+}
+#btm{
+    position: absolute;
+    width:100%;
+    height:100%;
+}
+#btm img:nth-child(1){
+    transform: translate(-50%,-50%) scale(2);
+}
+#btm img:nth-child(2){
+    transform: translate(-50%,-50%) scale(1.5);
+}
+#btm img:nth-child(3){
+    transform: translate(-50%,-50%) scale(1);
+}
+#top img:nth-child(1){
+    transform: translate(-50%,-50%) rotate(-180deg)scale(2);
+}
+#top img:nth-child(2){
+    transform: translate(-50%,-50%)rotate(-180deg) scale(1.5);
+}
+#top img:nth-child(3){
+    transform: translate(-50%,-50%)rotate(-180deg) scale(1);
+}
+
+
+#smlcircle{
+    height: 70vw;
+    width: 70vw;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 45vw;
+    height: 45vw;
+    transform: translate(-50%,-50%);
+    background-color: #fff;
+    border-radius: 50%;
+
+}
+#home #nav, #second #nav{
+    display: flex;
+    z-index: 999;
+    position: absolute;
+    width: 100%;
+    padding: 30px 60px;
+    justify-content: space-between;
+}
+#nav h1{
+    text-transform: uppercase;
+    font-size: 20px;
+}
+#nav h5{
+    position: absolute;
+    top: 55%;
+    left: 88.8%;
+    font-size: 14px;
+    word-spacing: 20px;
+}
+#nav #box1{
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    background-color: black;
+    left: 95%;
+}
+#nav #box2{
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    background-color:rgb(42.5, 42.5, 42.5);
+    left: 93.7%;
+}
+#nav #box3{
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    background-color:rgb(85, 85, 85);
+    left: 92.4%;
+}
+#nav #box4{
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    background-color:rgb(127.5, 127.5, 127.5);
+    left: 91.1%;
+}
+#nav #box5{
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    background-color:rgb(170, 170, 170);
+    left: 89.8%;
+}
+#nav #box6{
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    background-color:rgb(216.5, 216.5, 216.5);
+    left: 88.5%;
+}
+#home #btmnav,#second #btmnav{
+    display: flex;
+    z-index: 999;
+    position: absolute;
+    width: 100%;
+    padding: 30px 60px;
+    justify-content: space-between;
+    bottom: 0;
+}
+#btmnav img{
+    width: 100px;
+}
+#centering{
+    width: 30vw;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 999;
+}
+#centering h5{
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-bottom:4px;
+
+}
+#centering #imag{
+    width: 100%;
+    height: 260px;
+    overflow: hidden;
+    position: relative;
+
+}
+#imag img{
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+#second{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+#overlay>h1#gallery{
+    position: absolute;
+    z-index: 9999;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    font-size: 10vw;
+    font-weight: 400;
+    pointer-events: none;
+
+}
+#gola{
+    width: 5vw;
+    height: 5vw;
+    position: absolute;
+    z-index: 99999;
+    border-radius: 50%;
+    background-color: #d5a7b4;
+    top: 150%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+#overlay>h1#pink{
+    position: absolute;
+    z-index: 9999;
+    bottom: -50%;
+    left: 50%;
+    transform: translate(-50%, 0%) rotate(30deg);
+    transform-origin: 0% 50%;
+    font-size: 10vw;
+    width: 100vw;
+    text-align: center;
+    color: #fff;
+
+}
+#card{
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    z-index: 99999;
+    background-color: #d5a7b4;
+    color: #fff;
+    font-weight: 100;
+    padding: 100px 100px;
+    top: 150%;
+}
+#card h4{
+    font-weight: 500;
+    font-family: "montserrat";
+    margin-top: 60px;
+    margin-bottom: 20px;
+
+}
+#card h5{
+    font-weight: 500;
+    font-family: "montserrat";
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+#card h6{
+    font-weight: 500;
+    font-family: "montserrat";
+    font-size: 20px;
+}
+#card h3{
+    font-family: "montserrat";
+    margin-top: 20px;
+    font-weight: 700;
+}
+#stop{
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    height: 68%;
+    border-bottom: 2px solid #000000;
+
+}
+#sbtm{
+    position: relative;
+    width: 100%;
+    height: 32%;
+}
+.circle{
+    position: absolute;
+    width: 14vw;
+    height: 14vw;
+    background-color: blue;
+    border-radius: 50%;
+    top: 150%;
+    transform: translate(-50%,-50%);
+}
+#stop .pu{
+    left: 45%;
+    background-color: #b4aad5;
+}
+#stop .pi{
+    left: 55%;
+    background: linear-gradient(to right,#d5a7b4,#d5a7b4);  
+}
+#stop h1{
+    font-size: 25vw;
+    font-weight: 100;
+    position: absolute;
+    bottom: 0;
+    line-height: 1;
+    left: 100%;
+    z-index: 9999;
+    color: #fff;
+    
+}
+#sbtm p{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 3vw;
+    line-height: 1;
+    font-weight: 400;
+}
+#sbtm #two{
+    opacity: 0;
+}
+
+@media(max-width: 500px){
+    #home #nav,#second #nav{
+        padding: 20px;
+        width: 80vw;
+    }
+    #nav h1{
+        font-size: 4vw;
+    }
+    #nav h5{
+        width: 38%;
+        font-size: 12px;
+    }
+    #nav #box1{
+        width: 16px;
+        height: 16px;
+        left: 117%;
+    }
+    #nav #box2{
+        width: 16px;
+        height: 16px;
+        left:112%;
+    }
+    #nav #box3{
+        width: 16px;
+        height: 16px;
+        left: 107%;
+    }
+    #nav #box4{
+        width: 16px;
+        height: 16px;
+        left: 102%;
+    }
+    #nav #box5{
+        width: 16px;
+        height: 16px;
+        left: 97%;
+    }
+    #nav #box6{
+        width: 16px;
+        height: 16px;
+        left: 92%;
+    }
+    #centering{
+        width: 80vw;
+    }
+    #centering #imag{
+        height: 180px;
+    }
+    #centering h5{
+        margin-bottom: 5px;
+    }
+     #home #btmnav,#second #btmnav{
+        padding: 5px 20px;
+    }
+    #overlay>h1#gallery{
+        bottom:12%;
+    }
+    #overlay>h1#pink{
+        bottom: 12%;
+    }
+    #gola{
+        width: 25vw;
+        height: 25vw;
+    }
+    #card{
+        width: 90vw;
+        padding: 30px 30px;
+    }
+    #home #circle{
+        width: 150vw;
+        height: 150vw;
+    }
+    #home #smlcircle{
+        width: 95vw;
+        height: 95vw;
+    }
+    #sbtm p{
+        font-size: 5vw;
+        width:90%
+    }
+    .circle{
+        width: 34vw;
+        height: 34vw;
+    }
+    #stop h1{
+        font-size: 55vw;
+
+    }
+
+
+}
